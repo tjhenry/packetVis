@@ -8,7 +8,7 @@ Receivers should be backward compatible to allow for a variety of different sche
 Schema 1
 =========
 * One way transmission
-* No error checking, parity, or erasure handling
+* No FEC, error checking, parity, or erasure handling
 
 Physical Layer
 --------------
@@ -25,7 +25,7 @@ Data Link Layer
 Schema 2
 =========
 * One way transmission
-* No error checking, parity, or erasure handling
+* No FEC, error checking, parity, or erasure handling
 * Quaternary
 
 Physical Layer
@@ -50,6 +50,10 @@ Data Link Layer
 Decoding
 --------
 Start and End transitions used to determine clocking / duration of each quaternary number.  Although standard timing should be used.
+
+Schema 3
+========
+* Forward Error Correction
 
 Future Schema
 =============
