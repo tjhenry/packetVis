@@ -4,6 +4,7 @@ Describes how data is en/decoded for transmission via a visible light source.
 Different schemas to defines increasing complexity, reliability, and likely increasing bandwidth.
 Receivers should be backward compatible to allow for a variety of different schema transmitters to use the defined protocols.
 
+Avoid 5-30hz if possible for photosensitive epilepsy
 
 Schema 1
 =========
@@ -40,7 +41,7 @@ Data Link Layer
 * Blue = 1
 * Red = 2
 * White = 3
-* No parity, no error checking, no framing
+* Parity, Basic error checking, but no FEC
 * Base 4
 * Frame
 *   Start [0,3,0,3]
